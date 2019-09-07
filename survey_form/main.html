@@ -120,19 +120,36 @@
 <div id="form-outer">
     <p id="description">Use this form to submit your ID request</p>
     <form id="survey-form">
-        <div class="rowTab">        <div class="labels">
-            <label id="name-label" for="name">* Name: </label>
-        </div>
-        <div class="rightTab">
-            <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
-        </div>
+        <div class="rowTab">        
+            <div class="labels">
+                <label id="name-label" for="name">* Name: </label>
+            </div>
+            <div class="rightTab">
+                <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+            </div>
         </div>
         <div class="rowTab">
             <div class="labels">
                 <label id="email-label" for="email">* Email: </label>
             </div>
             <div class="rightTab">
-                <input autofocus type="text" name="email" id="email" class="input-field" placeholder="Enter your email" required>
+                <input autofocus type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required>
+            </div>
+        </div>
+        <div class="rowTab">
+            <div class="labels">
+                <label id="number-label" for="age">* Age: </label>
+            </div>
+            <div class="rightTab">
+                <input autofocus type="number" name="age" id="number" min="1" max="99" pattern="[0-9]*" class="input-field" placeholder="Enter your age" required>
+            </div>
+        </div>
+        <div class="rowTab">
+            <div class="labels">
+                <label id="dropdown" for="system">* System: </label>
+            </div>
+            <div class="rightTab">
+                <input autofocus type="dropdown" name="system" id="system" class="input-field"  required>
             </div>
         </div>
     </form>
